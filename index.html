@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Square Square</title>
+  <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section class="container">
+    <div class="square cuadrado-left-top">
+      <div class="inset square-1"></div>
+      <div class="inset square-2"></div>
+      <div class="inset square-3"></div>
+      <div class="inset square-4"></div>
+    </div>
+
+    <div class="square cuadrado-right-top">
+      <div class="inset square-1"></div>
+      <div class="inset square-2"></div>
+      <div class="inset square-3"></div>
+      <div class="inset square-4"></div>
+    </div>
+
+    <div class="square cuadrado-left-bottom">
+      <div class="inset square-1"></div>
+      <div class="inset square-2"></div>
+      <div class="inset square-3"></div>
+      <div class="inset square-4"></div>
+    </div>
+
+    <div class="square cuadrado-right-bottom">
+      <div class="inset square-1"></div>
+      <div class="inset square-2"></div>
+      <div class="inset square-3"></div>
+      <div class="inset square-4"></div>
+    </div>
+  </section>
+
+  <script>
+    const $container = document.querySelector('.container');
+    let rotate = 0;
+
+    $container.addEventListener('click', () => {
+      $container.style.setProperty('--g', `${rotate += 45}deg`);
+    })
+  </script>
+</body>
+
+</html>
